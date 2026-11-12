@@ -64,13 +64,13 @@ export async function renderWallpaper(opts: {
         <div
           style={{
             position: "absolute", top: 0, left: 0, width, height, display: "flex",
-            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 36%, rgba(8,8,14,${opts.isEvening ? 0.45 : 0.5}) 52%, rgba(8,8,14,${opts.isEvening ? 0.55 : 0.6}) 80%, rgba(8,8,14,0.35) 100%)`,
+            backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 48%, rgba(6,6,10,0.55) 66%, rgba(6,6,10,0.78) 84%, rgba(6,6,10,0.6) 100%)`,
           }}
         />
         <div
           style={{
-            position: "absolute", left: 120 * k, right: 120 * k, top: height * 0.44, bottom: height * 0.12,
-            display: "flex", flexDirection: "column", justifyContent: "center", color: "#fbf8f1",
+            position: "absolute", left: 120 * k, right: 120 * k, top: height * 0.5, bottom: height * 0.115,
+            display: "flex", flexDirection: "column", justifyContent: "flex-end", color: "#fbf8f1",
           }}
         >
           <div style={{ display: "flex", fontFamily: "Playfair", fontWeight: 700, fontSize: 200 * k, lineHeight: 0.6, color: accent, height: 110 * k, opacity: 0.9 }}>

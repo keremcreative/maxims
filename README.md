@@ -21,10 +21,10 @@ Yeni söz eklemek için listeye bir satır ekle.
 
 ## Arka planlar
 
-`public/bg/sabah-XX.jpg` (gündüz renkleri) ve `aksam-XX.jpg` (gece renkleri).
-Şimdilik `npm run bg` ile kodla çizilen geçici manzaralar. AI görselleri hazır olunca aynı isimlerle
-bu klasöre koymak yeterli (1290 x 2796, dikey). Sayı değişirse `lib/schedule.ts` içindeki
-`MORNING_BG` / `EVENING_BG` güncellenir.
+`public/bg/sabah-XX.jpg` ve `aksam-XX.jpg` (1290 x 2796, dikey). Gemini ile üretilen karanlık, sinematik,
+yüzü görünmeyen yalnız figürler. Yeni görsel eklerken aynı isim düzeniyle bu klasöre koy; sayı değişirse
+`lib/schedule.ts` içindeki `MORNING_BG` / `EVENING_BG` güncellenir. Söz alt kısma yazıldığı için görselin
+alt %40'ı karanlık olmalı. (`scripts/make_backgrounds.py` ilk prototipteki geçici çizimleri üretiyordu.)
 
 ## Yayına alma
 
