@@ -69,7 +69,7 @@ export async function renderWallpaper(opts: {
         />
         <div
           style={{
-            position: "absolute", left: 120 * k, right: 120 * k, top: height * 0.5, bottom: height * 0.115,
+            position: "absolute", left: 120 * k, right: 120 * k, top: height * 0.42, bottom: height * 0.19,
             display: "flex", flexDirection: "column", justifyContent: "flex-end", color: "#fbf8f1",
           }}
         >
