@@ -116,3 +116,5 @@ p { margin: 0; }
 .more summary { cursor: pointer; font-weight: 700; }
 .more p { margin-top: 10px; color: #cfc8d6; }
 .more code { display: block; margin-top: 8px; word-break: break-all; color: var(--accent); }
+.center.small { font-size: 12px; margin-top: 8px; }
+.center.small a { color: var(--accent); }
