@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Maxims",
     short_name: "Maxims",
-    description: "Günde iki kez, büyük düşünürlerden bir söz",
+    description: "Günde iki kez, seni harekete geçirecek bir söz",
     start_url: "/",
     display: "standalone",
     background_color: "#121016",

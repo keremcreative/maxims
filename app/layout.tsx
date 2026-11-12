@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Maxims",
-  description: "Günde iki kez, büyük düşünürlerden bir söz",
+  description: "Günde iki kez, seni harekete geçirecek bir söz",
   appleWebApp: { capable: true, title: "Maxims", statusBarStyle: "black-translucent" },
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="brand-mark" src="/icon.svg" alt="" width={28} height={28} />
             <span className="brand-text">
-              Maxims<small>Günde iki kez, büyük düşünürlerden bir söz</small>
+              Maxims<small>Günde iki kez, seni harekete geçirecek bir söz</small>
             </span>
           </Link>
         </header>

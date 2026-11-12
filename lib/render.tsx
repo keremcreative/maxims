@@ -14,25 +14,18 @@ let fontCache: { name: string; data: Buffer; weight: 400 | 600 | 700; style: "no
 async function fonts() {
   if (fontCache) return fontCache;
   const f = (n: string) => readFile(path.join(ROOT, "assets/fonts", n));
-  const [pi, pie, pb, pbe, i4, i4e, i6, i6e] = await Promise.all([
-    f("playfair-display-latin-400-italic.woff"),
-    f("playfair-display-latin-ext-400-italic.woff"),
-    f("playfair-display-latin-700-normal.woff"),
-    f("playfair-display-latin-ext-700-normal.woff"),
-    f("inter-latin-400-normal.woff"),
-    f("inter-latin-ext-400-normal.woff"),
-    f("inter-latin-600-normal.woff"),
-    f("inter-latin-ext-600-normal.woff"),
+  // Latin + Türkçe karakterler tek dosyada birleştirildi (ğ, ş, ı, İ aynı yazı tipinden gelsin)
+  const [pi, pb, i4, i6] = await Promise.all([
+    f("playfair-italic.ttf"),
+    f("playfair-bold.ttf"),
+    f("inter-400.ttf"),
+    f("inter-600.ttf"),
   ]);
   fontCache = [
     { name: "Playfair", data: pi, weight: 400, style: "italic" },
-    { name: "Playfair", data: pie, weight: 400, style: "italic" },
     { name: "Playfair", data: pb, weight: 700, style: "normal" },
-    { name: "Playfair", data: pbe, weight: 700, style: "normal" },
     { name: "Inter", data: i4, weight: 400, style: "normal" },
-    { name: "Inter", data: i4e, weight: 400, style: "normal" },
     { name: "Inter", data: i6, weight: 600, style: "normal" },
-    { name: "Inter", data: i6e, weight: 600, style: "normal" },
   ];
   return fontCache;
 }

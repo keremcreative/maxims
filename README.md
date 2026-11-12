@@ -1,6 +1,6 @@
 # Maxims
 
-Günde iki kez, büyük düşünürlerden bir söz: her sabah 09:00 ve akşam 21:00'de değişen duvar kağıtları.
+Günde iki kez, seni harekete geçirecek bir söz: her sabah 09:00 ve akşam 21:00'de değişen duvar kağıtları.
 
 - **/bugun.png**: sabit adresli duvar kağıdı. Her zaman o anki sözü verir (iPhone Pro Max/Plus boyutu, `?w=&h=` ile değişir).
 - **/**: bugünün sözü, önizleme, kaynak.
