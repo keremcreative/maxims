@@ -6,6 +6,18 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/bugun.png": ["./assets/fonts/**", "./public/bg/**"],
   },
+  async headers() {
+    return [
+      {
+        // iPhone'da dokununca Kestirmeler uygulamasında açılsın
+        source: "/Maxims.shortcut",
+        headers: [
+          { key: "Content-Type", value: "application/octet-stream" },
+          { key: "Content-Disposition", value: 'attachment; filename="Maxims.shortcut"' },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
