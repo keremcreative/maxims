@@ -36,6 +36,20 @@ export default async function Setup() {
         <p className="muted">Akşam sözü için aynısını <b>21:00</b> ile bir kere daha yap.</p>
       </section>
 
+      <section className="card setup-step">
+        <span className="step-no">3</span>
+        <h3>Kilit ekranından sıradakine geç (isteğe bağlı)</h3>
+        <p>Kestirme otomasyon saatleri dışında çalışınca sıradaki duvar kağıdını getirir. İki kolay yol:</p>
+        <ol className="taps">
+          <li>
+            <b>Telefonun arkasına 3 kez dokun:</b> Ayarlar → Erişilebilirlik → Dokunma → <b>Arkaya Dokunma</b> → <b>Üç Kez Dokunma</b> → listeden <b>Maxims</b>.
+          </li>
+          <li>
+            <b>Kilit ekranına düğme koy (iOS 18):</b> Kilit ekranına basılı tut → <b>Özelleştir</b> → <b>Kilit Ekranı</b> → alttaki fener ya da kamera düğmesindeki <b>–</b> → boş yere dokun → <b>Kestirmeler</b> → <b>Maxims</b>.
+          </li>
+        </ol>
+      </section>
+
       <details className="card more">
         <summary>Sorun mu var?</summary>
         <p>

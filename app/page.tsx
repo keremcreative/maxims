@@ -33,7 +33,7 @@ export default function Today() {
         <a className="btn" href="shortcuts://run-shortcut?name=Maxims&input=text&text=yeni">
           Şimdi değiştir
         </a>
-        <a className="btn ghost" href="/bugun.png" download="maxims.png">
+        <a className="btn ghost" href={`/bugun.png?s=${s.index}`} download="maxims.png">
           Görseli indir
         </a>
       </div>
